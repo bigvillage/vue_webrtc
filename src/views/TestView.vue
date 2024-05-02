@@ -19,7 +19,7 @@ export default {
     const videoElement = this.$refs.videoElement;
 
     axios
-      .get("https://local.saerom.co.kr/vue3node/getVideoData")
+      .get("https://local.jaehwan.co.kr/vue3node/getVideoData")
       .then((response) => {
         const videoData = response.data;
 
