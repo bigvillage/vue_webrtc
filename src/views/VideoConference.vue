@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import { onMounted, ref } from "vue";
 import RecordRTC from "recordrtc";
 
-const socket = io.connect("wss://local.saerom.co.kr", {
+const socket = io.connect("wss://local.jaehwan.co.kr", {
   path: "/socket.io",
   secure: true,
 });
