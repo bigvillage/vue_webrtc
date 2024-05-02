@@ -17,8 +17,8 @@ export default defineConfig({
   base: "/zoom",
   server: {
     https: {
-      key: fs.readFileSync("./pem/STAR.saerom.co.kr_key.pem"),
-      cert: fs.readFileSync("./pem/STAR.saerom.co.kr_crt.pem"),
+      key: fs.readFileSync("./pem/STAR.jaehwan.co.kr_key.pem"),
+      cert: fs.readFileSync("./pem/STAR.jaehwan.co.kr_crt.pem"),
     },
     proxy: {
       "/getVideoData": {
@@ -36,7 +36,7 @@ export default defineConfig({
       path: "socket.io",
       port: 3001,
     },
-    host: "local.saerom.co.kr",
+    host: "local.jaehwan.co.kr",
     // https: true
   },
   build: {},
